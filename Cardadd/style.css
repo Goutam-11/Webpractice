@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(207, 207, 207);
+  width: 100vw;
+  height: 100vh;
+}
+.cardContainer {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background: #757474;
+  padding: 5px;
+  border-radius: 15px;
+}
+.image {
+  position: relative;
+}
+.img {
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+}
+.duration {
+  position: absolute;
+  left: 90%;
+  top: 86%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(69, 67, 67, 0.8);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+.material-symbols-outlined {
+  font-size: 26px;
+}
+
+.title {
+  color: white;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+}
+.name {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  opacity: 60%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+:is(.views, .time) {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  opacity: 60%;
+}
+.inputContainer {
+
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+.inputContainer h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+.inputContainer label {
+  display: block;
+  margin: 8px 0 4px;
+  font-size: 14px;
+  color: #666;
+}
+.inputContainer input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.inputContainer button {
+  width: 100%;
+  padding: 10px;
+  background: #757474;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.inputContainer button:hover {
+  background: #5a5a5a;
+}
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
